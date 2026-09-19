@@ -1,0 +1,439 @@
+.ns-meter-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 30px auto;
+  padding: 28px;
+  box-sizing: border-box;
+
+  background: #ffffff !important;
+  color: #172033 !important;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+/* Force all normal text to be visible */
+.ns-meter-card h1,
+.ns-meter-card h2,
+.ns-meter-card h3,
+.ns-meter-card p,
+.ns-meter-card span,
+.ns-meter-card div {
+  box-sizing: border-box;
+}
+
+.ns-meter-card h2,
+.ns-meter-card h3 {
+  color: #172033 !important;
+}
+
+.ns-meter-card p,
+.ns-meter-card span {
+  color: inherit;
+}
+
+/* Header */
+
+.ns-meter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.ns-meter-title {
+  margin: 0 !important;
+  color: #172033 !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+.ns-meter-subtitle {
+  margin: 7px 0 0 !important;
+  color: #6b7280 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+.ns-mic-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+  background: #e8f4ff;
+
+  font-size: 22px;
+}
+
+/* Idle / Error */
+
+.ns-state {
+  padding: 45px 25px;
+
+  text-align: center;
+
+  border-radius: 16px;
+
+  background: #f8fafc !important;
+  border: 1px solid #e5e7eb;
+}
+
+.ns-state-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f4ff;
+
+  font-size: 28px;
+}
+
+.ns-state h3 {
+  margin: 0 0 8px !important;
+
+  color: #172033 !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+.ns-state p {
+  max-width: 450px;
+
+  margin: 0 auto 24px !important;
+
+  color: #4b5563 !important;
+
+  line-height: 1.6 !important;
+  font-size: 14px !important;
+}
+
+.ns-state.ns-error {
+  background: #fff7f7 !important;
+  border-color: #fecaca;
+}
+
+.ns-state.ns-error h3 {
+  color: #991b1b !important;
+}
+
+.ns-state.ns-error p {
+  color: #7f1d1d !important;
+}
+
+.ns-state.ns-error .ns-state-icon {
+  background: #fee2e2;
+}
+
+/* Buttons */
+
+.ns-meter-card .ns-button {
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 12px 22px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.ns-meter-card .ns-button:hover {
+  transform: translateY(-1px);
+}
+
+.ns-meter-card .ns-button:active {
+  transform: translateY(0);
+}
+
+.ns-button-primary {
+  color: #ffffff !important;
+  background: #0288d1 !important;
+
+  box-shadow: 0 5px 15px rgba(2, 136, 209, 0.25);
+}
+
+.ns-button-secondary {
+  color: #172033 !important;
+  background: #e5e7eb !important;
+}
+
+.ns-button-stop {
+  width: 100%;
+
+  color: #ffffff !important;
+  background: #172033 !important;
+}
+
+.ns-button-stop:hover {
+  background: #263449 !important;
+}
+
+/* Main content */
+
+.ns-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Status card */
+
+.ns-status-card {
+  padding: 22px;
+
+  border-radius: 16px;
+
+  background: #f8fafc !important;
+  border: 1px solid #e5e7eb;
+}
+
+.ns-status-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ns-status-caption {
+  color: #6b7280 !important;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ns-status-tag {
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  color: #ffffff !important;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ns-status-value {
+  margin: 15px 0 8px !important;
+
+  color: #172033 !important;
+
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+.ns-level-number {
+  color: #0288d1 !important;
+
+  font-size: 48px;
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.ns-level-number span {
+  margin-left: 4px;
+
+  color: #6b7280 !important;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Progress meter */
+
+.ns-meter-section {
+  padding: 20px;
+
+  border-radius: 16px;
+
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb;
+}
+
+.ns-meter-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  color: #172033 !important;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ns-meter-label-row span {
+  color: #172033 !important;
+}
+
+.ns-level-bar-track {
+  width: 100%;
+  height: 14px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #e5e7eb !important;
+}
+
+.ns-level-bar-fill {
+  height: 100%;
+
+  border-radius: inherit;
+
+  transition:
+    width 0.15s ease,
+    background-color 0.25s ease;
+}
+
+.ns-scale {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 8px;
+}
+
+.ns-scale span {
+  color: #6b7280 !important;
+
+  font-size: 11px;
+}
+
+/* Graph */
+
+.ns-canvas-section {
+  padding: 20px;
+
+  border-radius: 16px;
+
+  background: #172033 !important;
+}
+
+.ns-canvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  color: #ffffff !important;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ns-canvas-header span {
+  color: #ffffff !important;
+}
+
+.ns-live {
+  color: #4ade80 !important;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.ns-canvas-wrapper {
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #111827 !important;
+}
+
+.ns-canvas {
+  display: block;
+
+  width: 100%;
+  height: 180px;
+}
+
+/* Disclaimer */
+
+.ns-meter-card .ns-disclaimer {
+  margin: 20px 0 0 !important;
+
+  color: #6b7280 !important;
+
+  text-align: center;
+
+  font-size: 11px !important;
+  line-height: 1.6 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .ns-meter-card {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .ns-meter-header {
+    align-items: flex-start;
+  }
+
+  .ns-meter-title {
+    font-size: 22px !important;
+  }
+
+  .ns-meter-subtitle {
+    font-size: 13px !important;
+  }
+
+  .ns-mic-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .ns-level-number {
+    font-size: 40px;
+  }
+
+  .ns-canvas {
+    height: 140px;
+  }
+}
