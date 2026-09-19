@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  color: #111111;
+  font-family: Arial, sans-serif;
+}
+
+button,
+textarea {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0;
+  color: #111111;
+}
+
+h2 {
+  color: #111111;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section-title {
+  margin-top: 40px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message-button {
+  width: 100%;
+  padding: 18px;
+  background: white;
+  color: #111111;
+  border: 2px solid #cccccc;
+  border-radius: 12px;
+  font-size: 18px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.message-button:hover {
+  border-color: #2563eb;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 15px;
+  background: white;
+  color: #111111;
+  border: 2px solid #cccccc;
+  border-radius: 12px;
+  font-size: 18px;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.speak-button {
+  margin-top: 12px;
+  padding: 16px 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.speak-button:disabled {
+  background: #999999;
+  cursor: not-allowed;
+}
+
+.stop-button {
+  margin-top: 12px;
+  margin-left: 10px;
+  padding: 16px 25px;
+  background: #ffffff;
+  color: #111111;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
